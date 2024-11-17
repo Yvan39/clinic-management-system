@@ -1,0 +1,34 @@
+.announcement-board-wrapper {
+    height: 2em;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1em 0;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto; /* Center alignment */
+}
+
+.announcement-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollTicker 15s linear infinite;
+}
+
+.text {
+    padding-right: 80px; /* Space between repeated texts */
+    display: inline-block;
+}
+
+/* Define the scrolling animation */
+@keyframes scrollTicker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
